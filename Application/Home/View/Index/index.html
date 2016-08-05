@@ -1,0 +1,27 @@
+
+<ul class="list-group newsList">
+    <foreach name="data" item="v">
+        <li class="list-group-item">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-2 imgBox">
+                        <empty name="v.img">
+                            <img src="__PUBLIC__/Common/img/preview.jpg">
+                            <else/>
+                            <img src="__PUBLIC__/Uploads/small/{$v.img}">
+                        </empty>
+                    </div>
+                    <div class="col-xs-8 col-sm-10">
+                        <div class="title">{$v.title}</div>
+                        <div class="time-lable clearfix" >
+                            <div class="time pull-left"><php>echo date("h:i:s")</php></div>
+                            <div class="lable pull-right">
+                                <span class="label label-warning">{$v.lable}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </foreach>
+</ul>

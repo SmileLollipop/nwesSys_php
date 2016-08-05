@@ -1,0 +1,76 @@
+<div class="item-title">新闻列表</div>
+
+<div class="top-button">
+	<form class="form-inline">
+		<label>选择新闻分类：</label>
+		<select id="category" class="form-control" >
+			<option value="-1">全部</option>
+			<option value="0" <eq name="cid" value="0">selected</eq>>未分类</option>
+			<foreach name="category" item="v">
+				<option value="{$v.id}" <eq name="v.id" value="$cid">selected</eq>>{$v.name}</option>
+			</foreach>
+		</select>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="{:U('List/add')}" class="btn btn-warning">添加新闻</a>
+	</form>
+</div>
+<!--新闻信息列表-->
+<div class="panel panel-default">
+	<div class="panel-body">
+		<table class="table table-striped list-table">
+			<thead>
+			<tr>
+				<th style="width:6%">分类</th>
+				<th style="width:30%">标题</th>
+				<th style="width:10%">标签</th>
+				<th style="width:25%">图片</th>
+				<th style="width:15%">创建时间</th>
+				<th style="width:14%">操作</th>
+			</tr>
+			</thead>
+			<tbody>
+			<foreach name="list.data" item="v">
+				<tr>
+					<td>
+						<empty name="v.cid">
+							<a href="{:U('List/index','cid=0')}">未分类</a>
+							<else/>
+							<a href="{:U('List/index',array('cid'=>$v['cid']))}">{$v.category_name}</a>
+						</empty>
+					</td>
+					<td>{$v.title}</td>
+					<td>{$v.lable}</td>
+					<td >{$v.img}</td>
+					<td>{$v.time}</td>
+					<td>
+						<a href="{:U('List/edit',array('id'=>$v['id'],'cid'=>$v['cid'],'p'=>$p))}" class="act-edit">修改</a>
+						&nbsp;&nbsp;&nbsp;<a href="#" class="act-del" data-id="{$v.id}">删除</a>
+					</td>
+				</tr>
+			</foreach>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="pagelist">{$list.pagelist}</div>
+
+
+<form method="post" id="form">
+	<input type="hidden" name="id" id="target_id">
+</form>
+
+
+<script>
+	//下拉菜单跳转
+	$("#category").change(function(){
+		var url = "{:U('List/index',array('cid'=>'_ID_'))}";
+		location.href = url.replace("_ID_",$(this).val());
+	});
+
+	//删除
+	$(".act-del").click(function(){
+		if(confirm('确定要删除吗？')){
+			$("#target_id").val($(this).attr("data-id"));
+			$("#form").attr("action","{:U('List/del',array('p'=>$p,'cid'=>$cid))}").submit();
+		}
+	});
+</script>

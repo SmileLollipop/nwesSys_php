@@ -1,0 +1,24 @@
+[ 2016-07-07T11:15:24+08:00 ] 127.0.0.1 /
+ERR: 模板不存在:./Application/Home/View/layout.html
+
+[ 2016-07-07T11:16:22+08:00 ] 127.0.0.1 /
+ERR: 模板不存在:./Application/Home/View/layout.html
+
+[ 2016-07-07T12:05:48+08:00 ] 127.0.0.1 /
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2016-07-07T17:49:03+08:00 ] 127.0.0.1 /Index/index.html
+ERR: Think\Model:getList方法不存在！
+
+[ 2016-07-07T17:51:58+08:00 ] 127.0.0.1 /Index/index.html
+ERR: Think\Model:getNews方法不存在！
+
+[ 2016-07-07T17:52:00+08:00 ] 127.0.0.1 /Index/index.html
+ERR: Think\Model:getNews方法不存在！
+
+[ 2016-07-07T20:25:05+08:00 ] 127.0.0.1 /Index/index.html
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2016-07-07T20:31:37+08:00 ] 127.0.0.1 /Baijia/index.html
+ERR: 无法加载控制器:Baijia
+

@@ -1,0 +1,26 @@
+
+body{
+    font-family: Helvetica,simsun;
+}
+
+.login-Con{
+    width:420px;
+    margin-top:8%;
+}
+
+.login-title{
+    text-align: center;
+    font-weight: 600;
+}
+
+.login-form{
+    width: 420px;
+    height: 350px;
+    padding: 35px;
+    border: 1px solid #CCCCCC;
+    background: rgba(248,248,248,.4);
+}
+
+.login-btn{
+    padding: 5px 20px;
+}

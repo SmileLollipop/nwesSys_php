@@ -1,0 +1,134 @@
+
+/*重置*/
+
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+
+    list-style: none;
+
+}
+[class*=col-]{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+/*头部*/
+header{
+    background: #3E98F0;
+    color: #fff;
+
+}
+
+.divider{
+    height: 1px;
+    margin: 0 10px;
+    background-color: #5dabf0;
+}
+.collapse .divider{
+    margin: 0;
+}
+
+
+header a{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+header a:active{
+    color: #fff;
+
+}
+header a:focus{
+    color: #fff;
+}
+
+header li{
+    position: relative;
+    height: 33px;
+    line-height: 34px;
+
+}
+
+header b{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 12px;
+    width: 1px;
+    display: block;
+    overflow-y: hidden;
+    background-color: #5dabf0;
+
+}
+header .caret{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.other .caret{
+    transform: rotate(180deg);
+}
+
+
+.toolbar-icon{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    background:url('../img/bg-new-toolbar_6e9bc53.png');
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+}
+
+.icon-baidu{
+    background-position: center 4px;
+
+}
+.icon-userhome {
+
+    background-position: center -464px;
+}
+.icon-search {
+    background-position: center -162px;
+}
+.icon-subscribe {
+
+    background-position: center -107px;
+}
+
+.icon-baidu-news{
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    line-height: 34px;
+    background-image: url(../img/bg-news-logo_344ce44.png);
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+}
+
+
+/*/!*新闻列表*!/*/
+.newsList li {
+    height:90px;
+}
+
+.newsList .title{
+    height: 50px;
+    overflow: hidden;
+}
+
+.newsList .time-lable{
+    height: 20px;
+}

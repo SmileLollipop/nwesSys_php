@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>新闻管理系统</title>
+	<link rel="stylesheet" href="__PUBLIC__/Common/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="__PUBLIC__/Admin/css/style.css"/>
+	<script src="__PUBLIC__/Common/js/jquery.min.js"></script>
+	<script src="__PUBLIC__/Common/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse rect">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">新闻后台管理系统</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="javascript:;" class="login-info">欢迎您：{$admin_name}</a></li>
+				<li><a href="__APP__/" target="_blank">前台首页</a></li>
+				<li><a href="{:U('Login/logout')}">退出登录</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<div class="main">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="panel panel-default menu">
+					<div class="panel-heading menu-head">管理菜单</div>
+					<div class="panel-body menu-body">
+						<div class="list-group menu-list">
+							<a href="{:U('Index/index')}" class="list-group-item " id="Index_index">后台首页</a>
+							<a href="{:U('List/add')}" class="list-group-item" id="List_add">新闻添加</a>
+							<a href="{:U('List/index')}" class="list-group-item " id="List_index">新闻列表</a>
+							<a href="{:U('Category/index')}" class="list-group-item " id="Category_index">新闻分类</a>
+							<a href="#" class="list-group-item ">会员管理</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10">
+				<div class="content">
+				<div class="item">{__CONTENT__}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+
+	//切换菜单背景
+	$("#{$Think.CONTROLLER_NAME}_{$Think.ACTION_NAME}").addClass("active");
+
+</script>
+</body>
+</html>

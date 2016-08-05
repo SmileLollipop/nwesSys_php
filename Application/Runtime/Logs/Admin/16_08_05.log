@@ -1,0 +1,237 @@
+[ 2016-08-05T09:10:16+08:00 ] ::1 /newsSys_php/Admin/List/edit/id/62/cid/2/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `news_category` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `news_list` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`cid`,`title`,`lable`,`img` FROM `news_list` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `news_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\1671cb75a1db03b4eedfa2366c4864c7.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2016-08-05T09:10:24+08:00 ] ::1 /newsSys_php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: select version() as ver [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2016-08-05T09:10:25+08:00 ] ::1 /newsSys_php/Admin/List/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `news_category` [ RunTime:0.0628s ]
+SQL: SELECT `id`,`name` FROM `news_category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `news_list` [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: old D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\8d5d65a566d2003fd4ada01b11bcb330.php 第 74 行.
+NOTIC: [8] Undefined variable: old D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\8d5d65a566d2003fd4ada01b11bcb330.php 第 81 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\8d5d65a566d2003fd4ada01b11bcb330.php 第 102 行.
+NOTIC: [8] Undefined variable: old D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\8d5d65a566d2003fd4ada01b11bcb330.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-08-05T09:10:27+08:00 ] ::1 /newsSys_php/Admin/List/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `news_list` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `news_category` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `news_category`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\newsSys_php\Application\Admin\Model\ListModel.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM news_list list LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\newsSys_php\Application\Admin\Model\ListModel.class.php 第 44 行.
+SQL: SELECT c.name as category_name,list.cid,list.id,list.title,list.lable,list.img,list.time FROM news_list list LEFT JOIN news_category AS c ON c.id=list.cid  ORDER BY list.id desc LIMIT 0,6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2016-08-05T09:12:17+08:00 ] ::1 /newsSys_php/Admin/Category/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `news_category` [ RunTime:0.0669s ]
+SQL: SELECT `id`,`name` FROM `news_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: success D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 100 行.
+NOTIC: [8] Undefined variable: id D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-08-05T09:12:21+08:00 ] ::1 /newsSys_php/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `news_category` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: validate D:\xampp\htdocs\newsSys_php\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT `id`,`name` FROM `news_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: success D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 100 行.
+NOTIC: [8] Undefined variable: id D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\9bfef0f9f473c596f668b6c9a32bfd5c.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2016-08-05T09:13:28+08:00 ] ::1 /newsSys_php/Admin/List/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `news_category` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `news_category`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `news_list` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined variable: old D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\8d5d65a566d2003fd4ada01b11bcb330.php 第 74 行.
+NOTIC: [8] Undefined variable: old D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\8d5d65a566d2003fd4ada01b11bcb330.php 第 81 行.
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\8d5d65a566d2003fd4ada01b11bcb330.php 第 102 行.
+NOTIC: [8] Undefined variable: old D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\8d5d65a566d2003fd4ada01b11bcb330.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2016-08-05T09:13:29+08:00 ] ::1 /newsSys_php/Admin/List/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `news_list` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `news_category` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name` FROM `news_category`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\newsSys_php\Application\Admin\Model\ListModel.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM news_list list LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\newsSys_php\Application\Admin\Model\ListModel.class.php 第 44 行.
+SQL: SELECT c.name as category_name,list.cid,list.id,list.title,list.lable,list.img,list.time FROM news_list list LEFT JOIN news_category AS c ON c.id=list.cid  ORDER BY list.id desc LIMIT 0,6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2016-08-05T09:13:33+08:00 ] ::1 /newsSys_php/Admin/List/edit/id/62/cid/2/p/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `news_category` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `news_list` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`cid`,`title`,`lable`,`img` FROM `news_list` WHERE `id` = 62 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `news_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Use of undefined constant cid - assumed 'cid' D:\xampp\htdocs\newsSys_php\Application\Runtime\Cache\Admin\1671cb75a1db03b4eedfa2366c4864c7.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+

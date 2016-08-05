@@ -1,0 +1,24 @@
+
+<div class="item-title">后台首页</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">欢迎访问</div>
+	<div class="panel-body">
+		欢迎进入新闻后台管理系统！请从左侧选择一个操作。
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">服务器信息</h3>
+	</div>
+	<div class="panel-body server-info">
+		<ul class="list-group server-info-list">
+			<li class="list-group-item">系统环境：{$serverInfo['server_version']}</li>
+			<li class="list-group-item">服务器时间：{$serverInfo['server_time']}</li>
+			<li class="list-group-item">MySQL版本：{$serverInfo['mysql_version']}</li>
+			<li class="list-group-item">文件上传限制：{$serverInfo['max_upload']}</li>
+			<li class="list-group-item">脚本执行时限：{$serverInfo['max_ex_time']}</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,118 @@
+
+/*重置*/
+
+.rect{
+    border-radius: 0;
+}
+.panel{
+    border-radius: 0;
+}
+.list-group-item:first-child {
+    border-top: none;
+    border-radius: 0;
+}
+.list-group-item:last-child {
+    border-radius: 0;
+}
+
+.table>thead>tr>th,.table>tbody>tr>th {
+    text-align: center;
+}
+
+/*公共类*/
+.item-title{
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.top-button{
+    margin-bottom: 10px;
+}
+
+.tip{
+    display: inline-block;
+    height: 100%;
+    color: #FF0000;
+    line-height: 100%;
+}
+
+
+/*头部*/
+.navbar-inverse .navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>li>.login-info:focus, .navbar-inverse .navbar-nav>li>.login-info:hover{
+    color: #9d9d9d;
+}
+/*主要部分*/
+.main{
+    padding: 0 20px;
+}
+/*左侧导航*/
+.menu{
+    border: none;
+}
+.menu-head{
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+.menu .menu-body{
+    padding: 0;
+}
+.menu-list{
+    margin: 0;
+}
+
+/*首页*/
+.server-info{
+    padding: 0;
+}
+
+.server-info-list>*{
+    border: none;
+}
+
+/*新闻分类*/
+.category-panel{
+    width: 85%;
+}
+.category-table{
+    text-align: center;
+}
+
+
+/*添加新闻*/
+.addNews-panel{
+    width: 85%;
+}
+.message{
+    width:20%;
+    height: 30px;
+    border:1px solid skyblue;
+    border-radius: 4px;
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 0 20px;
+    color: skyblue;
+    font-weight: 600;
+}
+.addNews-panel .tip{
+
+    line-height: 30px;
+}
+
+/*新闻列表*/
+.list-table{
+
+    text-align: center;
+
+}
+
+.pagelist{line-height:14px;margin-top:20px;}
+.pagelist a{padding:5px 8px;margin:0 2px;display:inline-block;border:1px solid #ccc;background:#fff;}
+.pagelist a:hover{text-decoration:none;background:#eee;}
+.pagelist span{padding:5px 8px;margin:0 2px;}
